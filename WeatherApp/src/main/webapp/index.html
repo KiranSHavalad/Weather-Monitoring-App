@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Fetcher</title>
+</head>
+<body>
+    <h1>Check Current Weather</h1>
+    <form action="fetchWeather" method="GET">
+        <label for="city">Enter City Name:</label>
+        <input type="text" id="city" name="city" required>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <!-- Display the weather information here -->
+    <div id="weatherInfo">
+        <h2>Weather Details:</h2>
+        <p id="cityName"></p>
+        <p id="temperature"></p>
+        <p id="feelsLike"></p>
+        <p id="condition"></p>
+    </div>
+</body>
+</html>
